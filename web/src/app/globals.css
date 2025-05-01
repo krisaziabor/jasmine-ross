@@ -6,22 +6,78 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Active area styling */
-.image-carousel-container {
-  position: relative;
-}
-
-/* Remove default outline on focus */
-.image-carousel-container:focus {
+/* Remove focus outline throughout the site */
+*:focus {
   outline: none;
 }
 
-/* Optional: Add smooth transitions for the image carousel */
+/* Image carousel styles */
+.image-gallery {
+  position: relative;
+  user-select: none;
+}
+
+.image-gallery img {
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+/* Image carousel transitions */
 .image-fade {
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .image-fade.active {
   opacity: 1;
+}
+
+/* Rubberbanding animation */
+@keyframes rubberband {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(15px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(-8px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rubberbandReverse {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-15px); }
+  50% { transform: translateX(0); }
+  75% { transform: translateX(8px); }
+  100% { transform: translateX(0); }
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 2s cubic-bezier(0.43, 0.13, 0.23, 0.96);
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 2s cubic-bezier(0.43, 0.13, 0.23, 0.96);
+}
+
+/* Fade-in effect for page content */
+.fade-in {
+  animation: fadeIn 500ms cubic-bezier(0.43, 0.13, 0.23, 0.96);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -8,7 +8,7 @@ interface MainMenuProps {
 export default function MainMenu({ className = '' }: MainMenuProps) {
   return (
     <nav className={`flex flex-col h-full ${className}`}>
-      <div className="space-y-3">
+      <div className="space-y-3 h-full flex flex-col">
         {contentStructure.map((category, index) => (
           <div key={index} className="menu-category mb-3">
             <h2 className="font-[family-name:var(--font-medium-right-grotesk)] text-lg mb-1">
