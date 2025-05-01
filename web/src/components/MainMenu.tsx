@@ -41,7 +41,7 @@ export default function MainMenu({ className = '' }: MainMenuProps) {
                             <li key={colIndex} className="py-0.5">
                               <Link 
                                 href={collection.path} 
-                                className="font-[family-name:var(--font-caslon)] text-sm hover:underline"
+                                className="font-[family-name:var(--font-caslon)] text-sm hover:font-[family-name:var(--font-italic-caslon)]"
                               >
                                 {collection.title}
                               </Link>
@@ -62,7 +62,7 @@ export default function MainMenu({ className = '' }: MainMenuProps) {
                   <li key={colIndex} className="py-0.5">
                     <Link 
                       href={collection.path} 
-                      className="font-[family-name:var(--font-caslon)] text-sm hover:underline"
+                      className="font-[family-name:var(--font-caslon)] text-sm hover:font-[family-name:var(--font-italic-caslon)]"
                     >
                       {collection.title}
                     </Link>

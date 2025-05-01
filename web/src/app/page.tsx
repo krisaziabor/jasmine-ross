@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="mt-4">
                   <a
                     href="/information"
-                    className="font-[family-name:var(--font-semibold-caslon)] hover:underline"
+                    className="font-[family-name:var(--font-semibold-caslon)] hover:font-[family-name:var(--font-semibold-italic-caslon)]"
                   >
                     Information
                   </a>
