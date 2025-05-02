@@ -1,17 +1,14 @@
 "use client";
 
-import PageTransition from "@/components/PageTransition";
+import PhotoSeries from "@/components/PhotoSeries";
 
 export default function BWFilm35mm() {
   return (
-    <PageTransition>
-      <div>
-        <h1 className="text-3xl font-bold mb-6">35mm B&W Photography</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Photo gallery will go here */}
-          <p className="text-gray-500 col-span-full">Content coming soon</p>
-        </div>
-      </div>
-    </PageTransition>
+    <PhotoSeries
+      title="35mm"
+      imageCount={9} // Update with actual count when images are available
+      basePath="/35mm"
+      imagePrefix="JR-35-"
+    />
   );
 }
