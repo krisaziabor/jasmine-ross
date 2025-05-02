@@ -3,17 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-const social = localFont({
-  src: "../../fonts/ABCSocialEdu-Regular.woff2",
-  variable: "--font-social",
-  weight: "400",
-});
-
-const socialbold = localFont({
-  src: "../../fonts/ABCSocialEdu-Bold.woff2",
-  variable: "--font-bold-social",
-  weight: "700",
-});
 
 const rightgroteskbold = localFont({
   src: "../../fonts/PPRightGrotesk-Bold.woff2",
@@ -73,27 +62,27 @@ const caslonsemibolditalic = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jasmineross.vercel.app'),
+  metadataBase: new URL('https://jasminerross.com'),
   title: "Jasmine Ross",
   description:
-    "Photography graduate from Yale.",
+    "Oakland-based photography graduate from Yale.",
   icons: {
-    icon: "icon.ico",
-    apple: "/preview.jpg",
+    icon: "jr-icon.ico",
+    apple: "/JRLanding2.jpg",
   },
 
   // This is where you can add your Open Graph details:
   openGraph: {
     title: "Jasmine Ross",
     description:
-    "Photograghy graduate from Yale.",
-    url: "https://jasmineross.vercel.app",
+    "Oakland-based photography graduate from Yale.",
+    url: "https://jasminerross.com",
     siteName: "Jasmine Ross",
     images: [
       {
-        url: "/preview.jpg",
-        width: 1200,
-        height: 630,
+        url: "/JRLanding2.jpg",
+        width: 630,
+        height: 1200,
       },
     ],
     locale: "en_US",
@@ -105,8 +94,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jasmine Ross",
     description:
-      "Photography graduate from Yale.",
-    images: ["/preview.jpg"],
+      "Oakland-based photography graduate from Yale.",
+    images: ["/JRLanding2.jpg"],
   },
 };
 
@@ -118,7 +107,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <body
-        className={`${social.variable} ${caslon.variable} ${caslonbold.variable} ${caslonbolditalic.variable} ${caslonsemibold.variable} ${caslonsemibolditalic.variable} ${caslonitalic.variable} ${socialbold.variable} ${rightgroteskbold.variable} ${rightgroteskmedium.variable} ${rightgrotesklight.variable} antialiased`}
+        className={`${caslon.variable} ${caslonbold.variable} ${caslonbolditalic.variable} ${caslonsemibold.variable} ${caslonsemibolditalic.variable} ${caslonitalic.variable} ${rightgroteskbold.variable} ${rightgroteskmedium.variable} ${rightgrotesklight.variable} antialiased`}
       >
         {children}
         <Analytics />
