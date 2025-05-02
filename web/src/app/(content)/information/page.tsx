@@ -5,9 +5,9 @@ import InfoPageTransition from "@/components/InfoPageTransition";
 
 export default function Information() {
   return (
-    <div className="fixed inset-0 w-full h-full z-10">
+    <div className="fixed inset-0 w-full h-full z-10 overflow-y-auto bg-black">
       <InfoPageTransition>
-        <div className="w-full h-full flex flex-col bg-black text-white px-8 md:px-12 lg:px-16 py-8 md:py-12">
+        <div className="w-full min-h-full overflow-y-auto flex flex-col bg-black text-white px-8 md:px-12 lg:px-16 py-8 md:py-12">
       {/* Header */}
       <header className="mb-12 md:mb-16 text-center">
         <Link href="/">
@@ -19,11 +19,11 @@ export default function Information() {
 
       {/* Two Column Layout with Adjusted Spacing */}
       <div className="flex-grow flex flex-col md:flex-row justify-center">
-        <div className="flex justify-center w-full h-full">
+        <div className="flex justify-center w-full min-h-full">
           {/* Content Container - Constrains width and centers columns */}
-          <div className="flex flex-col md:flex-row max-w-4xl w-full justify-center h-full">
+          <div className="flex flex-col md:flex-row max-w-4xl w-full justify-center pb-8 md:h-full">
             {/* Left Column - Contact Information */}
-            <div className="md:w-1/3 lg:w-1/3 md:pr-6 lg:pr-8 mb-8 md:mb-0 flex items-stretch h-auto md:h-[calc(100vh-250px)]">
+            <div className="md:w-1/3 lg:w-1/3 md:pr-6 lg:pr-8 mb-8 md:mb-0 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-2 md:order-1">
               <div className="flex flex-col justify-between w-full h-full">
                 <div className="space-y-8 flex-grow overflow-y-auto pr-2">
                   {/* CONTACT Section */}
@@ -83,8 +83,8 @@ export default function Information() {
                   </div>
                 </div>
 
-                {/* Re-enter Gallery Link */}
-                <div className="mt-4">
+                {/* Re-enter Gallery Link - Desktop only */}
+                <div className="mt-4 hidden md:block">
                   <Link
                     href="/"
                     className="font-[family-name:var(--font-semibold-caslon)] hover:font-[family-name:var(--font-semibold-italic-caslon)]"
@@ -96,8 +96,8 @@ export default function Information() {
             </div>
 
             {/* Right Column - Artist Statement */}
-            <div className="md:w-2/3 lg:w-2/3 flex items-stretch h-auto md:h-[calc(100vh-250px)]">
-              <div className="font-[family-name:var(--font-caslon)] space-y-6 flex flex-col overflow-y-auto">
+            <div className="md:w-2/3 lg:w-2/3 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-1 md:order-2 mb-12 md:mb-0">
+              <div className="font-[family-name:var(--font-caslon)] space-y-6 flex flex-col w-full">
                 {/* <h2 className="font-[family-name:var(--font-medium-right-grotesk)] text-lg mb-3">
                   ARTIST STATEMENT
                 </h2> */}
@@ -129,6 +129,16 @@ export default function Information() {
                   always be the most beautiful.
                 </p>
               </div>
+            </div>
+            
+            {/* Mobile Re-enter Gallery Link (bottom position) */}
+            <div className="md:hidden w-full mt-10 order-3">
+              <Link
+                href="/"
+                className="font-[family-name:var(--font-semibold-caslon)] hover:font-[family-name:var(--font-semibold-italic-caslon)]"
+              >
+                Re-enter gallery
+              </Link>
             </div>
           </div>
         </div>

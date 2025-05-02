@@ -43,7 +43,17 @@ export default function MainMenu({ className = '' }: MainMenuProps) {
                                 href={collection.path} 
                                 className="font-[family-name:var(--font-caslon)] text-sm hover:font-[family-name:var(--font-italic-caslon)]"
                               >
-                                {collection.title}
+                                {collection.id === 'aqui-a-pesar-de-las-iguanas' ? (
+                                  <span 
+                                    className="group relative"
+                                    data-title={collection.title}
+                                  >
+                                    <span className="group-hover:hidden">Aquí, a pesar de las iguanas</span>
+                                    <span className="hidden group-hover:inline">Here, despite the iguanas</span>
+                                  </span>
+                                ) : (
+                                  collection.title
+                                )}
                               </Link>
                             </li>
                           ))}
@@ -64,7 +74,17 @@ export default function MainMenu({ className = '' }: MainMenuProps) {
                       href={collection.path} 
                       className="font-[family-name:var(--font-caslon)] text-sm hover:font-[family-name:var(--font-italic-caslon)]"
                     >
-                      {collection.title}
+                      {collection.id === 'aqui-a-pesar-de-las-iguanas' ? (
+                        <span 
+                          className="group relative"
+                          data-title={collection.title}
+                        >
+                          <span className="group-hover:hidden">Aquí, a pesar de las iguanas (2025)</span>
+                          <span className="hidden group-hover:inline">Here, despite the iguanas</span>
+                        </span>
+                      ) : (
+                        collection.title
+                      )}
                     </Link>
                   </li>
                 ))}

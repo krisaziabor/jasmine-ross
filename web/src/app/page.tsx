@@ -24,6 +24,21 @@ export default function Home() {
         <div className="flex justify-center w-full h-full">
           {/* Content Container - Constrains width and centers columns */}
           <div className="flex flex-col md:flex-row max-w-4xl w-full justify-center h-full">
+            
+            {/* Mobile Image (only shown on mobile) */}
+            <div className="md:hidden flex items-stretch justify-center h-[calc(100vh-300px)] w-full mb-10 mt-2">
+              <div className="relative h-full w-full flex items-center justify-center">
+                <Image
+                  src="/JRLanding2.jpg"
+                  alt="Featured work"
+                  fill={true}
+                  sizes="100vw"
+                  className="object-contain object-center"
+                  priority
+                />
+              </div>
+            </div>
+            
             {/* Left Column - Menu (matched to image container height) */}
             <div className="md:w-1/3 lg:w-1/3 md:pr-6 lg:pr-8 mb-8 md:mb-0 flex items-stretch h-auto md:h-[calc(100vh-250px)]">
               <div className="flex flex-col justify-between w-full h-full">
@@ -42,14 +57,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Column - Image (height maximized for desktop) */}
-            <div className="md:w-2/3 lg:w-2/3 flex items-stretch justify-center h-[calc(100vh-300px)] md:h-[calc(100vh-250px)]">
+            {/* Desktop Image (only shown on desktop) */}
+            <div className="hidden md:flex md:w-2/3 lg:w-2/3 items-stretch justify-center h-[calc(100vh-250px)]">
               <div className="relative h-full w-full flex items-center justify-center">
                 <Image
                   src="/JRLanding2.jpg"
                   alt="Featured work"
                   fill={true}
-                  sizes="(max-width: 768px) 100vw, 66vw"
+                  sizes="66vw"
                   className="object-contain object-center"
                   priority
                 />

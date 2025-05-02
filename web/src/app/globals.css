@@ -81,3 +81,34 @@ body {
     opacity: 1;
   }
 }
+
+/* Hide scrollbars */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Text fade effect */
+.text-fade {
+  position: relative;
+}
+
+.text-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.text-fade:hover::after {
+  opacity: 0;
+}
