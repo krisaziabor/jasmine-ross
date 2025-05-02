@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     "Oakland-based photography graduate from Yale.",
   icons: {
     icon: "jr-icon.ico",
-    apple: "/JRLanding2.jpg",
+    apple: "/JRLanding1.jpg",
   },
 
   // This is where you can add your Open Graph details:
@@ -80,9 +80,9 @@ export const metadata: Metadata = {
     siteName: "Jasmine Ross",
     images: [
       {
-        url: "/JRLanding2.jpg",
-        width: 630,
-        height: 1200,
+        url: "/JRLanding1.jpg",
+        width: 1200,
+        height: 630,
       },
     ],
     locale: "en_US",
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     title: "Jasmine Ross",
     description:
       "Oakland-based photography graduate from Yale.",
-    images: ["/JRLanding2.jpg"],
+    images: ["/JRLanding1.jpg"],
   },
 };
 
