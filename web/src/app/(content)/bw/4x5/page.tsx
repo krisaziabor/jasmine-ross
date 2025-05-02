@@ -7,8 +7,8 @@ export default function BWFilm4x5() {
     <PhotoSeries
       title="4x5"
       imageCount={2} // Update with actual count when images are available
-      basePath="/4x5"
-      imagePrefix="JR4X5-"
+      basePath="/4by5"
+      imagePrefix="JR45-"
     />
   );
 }
