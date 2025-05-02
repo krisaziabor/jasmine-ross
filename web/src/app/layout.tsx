@@ -81,8 +81,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/JRLanding2.jpg",
-        width: 1200,
-        height: 630,
+        width: 630,
+        height: 1200,
       },
     ],
     locale: "en_US",
