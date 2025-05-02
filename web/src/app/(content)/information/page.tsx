@@ -67,7 +67,7 @@ export default function Information() {
                         <h2 className="font-[family-name:var(--font-medium-right-grotesk)] text-lg mb-2">
                           EDUCATION
                         </h2>
-                        <div className="space-y-4">
+                        <div className="space-y-4">``
                           <div>
                             <h3 className="font-[family-name:var(--font-medium-right-grotesk)] text-xs mb-3">
                               YALE UNIVERSITY
