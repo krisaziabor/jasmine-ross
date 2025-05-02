@@ -76,7 +76,7 @@ export default function Information() {
                           B.A. in Art (Photography)
                         </div>
                         <div className="font-[family-name:var(--font-caslon)] text-sm">
-                          B.A. in Ethnicity, Race, and Migration
+                          B.A. in Ethics, Politics, and Economics
                         </div>
                       </div>
                     </div>

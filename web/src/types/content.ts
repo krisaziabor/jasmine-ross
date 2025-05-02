@@ -30,6 +30,7 @@ export const contentStructure: ContentCategory[] = [
     title: 'B&W FILM',
     type: 'bw',
     collections: [
+      { id: 'diotima-ss25', title: 'Diotima SS25', path: '/bw/diotima-ss25', type: 'bw' },
       { id: '35mm', title: '35mm', path: '/bw/35mm', type: 'bw' },
       { id: '4x5', title: '4x5', path: '/bw/4x5', type: 'bw' }
     ]
