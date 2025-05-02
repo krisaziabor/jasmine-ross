@@ -23,7 +23,7 @@ export default function Information() {
               {/* Content Container - Constrains width and centers columns */}
               <div className="flex flex-col md:flex-row max-w-4xl w-full justify-center pb-8 md:h-full">
                 {/* Left Column - Contact Information */}
-                <div className="md:w-1/3 lg:w-1/3 md:pr-6 lg:pr-8 mb-8 md:mb-0 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-2 md:order-1">
+                <div className="md:w-1/4 lg:w-1/4 md:pr-6 lg:pr-8 mb-8 md:mb-0 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-2 md:order-1">
                   <div className="flex flex-col justify-between w-full h-full">
                     <div className="space-y-8 flex-grow overflow-y-auto pr-2">
                       {/* CONTACT Section */}
@@ -69,10 +69,10 @@ export default function Information() {
                         </h2>
                         <div className="space-y-4">
                           <div>
-                            <h3 className="font-[family-name:var(--font-medium-right-grotesk)] text-xs mb-2">
+                            <h3 className="font-[family-name:var(--font-medium-right-grotesk)] text-xs mb-3">
                               YALE UNIVERSITY
                             </h3>
-                            <div className="font-[family-name:var(--font-caslon)] text-sm mb-1">
+                            <div className="font-[family-name:var(--font-caslon)] text-sm mb-2">
                               B.A. in Art (Photography)
                             </div>
                             <div className="font-[family-name:var(--font-caslon)] text-sm">
@@ -96,7 +96,7 @@ export default function Information() {
                 </div>
 
                 {/* Right Column - Artist Statement */}
-                <div className="md:w-2/3 lg:w-2/3 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-1 md:order-2 mb-12 md:mb-0">
+                <div className="md:w-3/4 lg:w-3/4 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-1 md:order-2 mb-12 md:mb-0">
                   <div className="font-[family-name:var(--font-caslon)] space-y-6 flex flex-col w-full">
                     {/* <h2 className="font-[family-name:var(--font-medium-right-grotesk)] text-lg mb-3">
                   ARTIST STATEMENT
@@ -115,17 +115,42 @@ export default function Information() {
                       further information about print details and purchases,
                       please contact her via email.
                     </p>
+                    
+                    {/* Website Credit - right aligned, desktop only */}
+                    <div className="text-gray-400 mt-auto text-right hidden md:block font-[family-name:var(--font-caslon)]">
+                      Website by{" "}
+                      <a 
+                        href="https://krisaziabor.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="hover:font-[family-name:var(--font-italic-caslon)]"
+                      >
+                        Kris Aziabor
+                      </a>
+                    </div>
                   </div>
                 </div>
 
                 {/* Mobile Re-enter Gallery Link (bottom position) */}
-                <div className="md:hidden w-full mt-10 order-3">
+                <div className="md:hidden w-full mt-10 order-3 flex flex-col space-y-4">
                   <Link
                     href="/"
                     className="font-[family-name:var(--font-semibold-caslon)] hover:font-[family-name:var(--font-semibold-italic-caslon)]"
                   >
                     Re-enter gallery
                   </Link>
+                  
+                  {/* Website Credit for mobile - below re-enter gallery */}
+                  <div className="text-gray-400 font-[family-name:var(--font-caslon)]">
+                    Website by{" "}
+                    <a 
+                      href="https://krisaziabor.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                    >
+                      Kris Aziabor
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

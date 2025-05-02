@@ -59,10 +59,7 @@ export default function AquiAPesarDeLasIguanas() {
         living for local residents, this piece endeavors to highlight the
         resilience and resistance of the Puerto Rican people, while calling
         attention to legacies of colonialism, gentrification, and economic
-        exploitation.
-      </p>
-      <p className="font-[family-name:var(--font-caslon)] text-base sm:text-lg md:text-xl lg:text-2xl mt-6 md:mt-6">
-        Note: This is not to say that I am exempt from the problem, as I was a
+        exploitation. Note: This is not to say that I am exempt from the problem, as I was a
         tourist during my trip, but to acknowledge my position within this
         dynamic, and think about the nuances of privilege, travel, and
         responsibility, while simultaneously calling the viewer to consider
