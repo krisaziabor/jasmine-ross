@@ -110,7 +110,6 @@ export default function RootLayout({
         className={`${caslon.variable} ${caslonbold.variable} ${caslonbolditalic.variable} ${caslonsemibold.variable} ${caslonsemibolditalic.variable} ${caslonitalic.variable} ${rightgroteskbold.variable} ${rightgroteskmedium.variable} ${rightgrotesklight.variable} antialiased`}
       >
         {children}
-        <Analytics />
       </body>
     </html>
   );
