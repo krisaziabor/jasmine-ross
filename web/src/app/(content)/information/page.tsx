@@ -96,7 +96,7 @@ export default function Information() {
                 </div>
 
                 {/* Right Column - Artist Statement */}
-                <div className="md:w-3/4 lg:w-3/4 flex items-stretch h-auto md:h-[calc(100vh-250px)] order-1 md:order-2 mb-12 md:mb-0">
+                <div className="md:w-3/4 lg:w-1/2 ml-auto flex items-stretch h-auto md:h-[calc(100vh-250px)] order-1 md:order-2 mb-12 md:mb-0">
                   <div className="font-[family-name:var(--font-caslon)] space-y-6 flex flex-col w-full">
                     {/* <h2 className="font-[family-name:var(--font-medium-right-grotesk)] text-lg mb-3">
                   ARTIST STATEMENT
